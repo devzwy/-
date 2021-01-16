@@ -1,0 +1,210 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>简历/Android工程师/赵文文</title>
+    <link rel="stylesheet" href="css/resume_pc.css" media="screen and (min-width: 840px)"/>
+    <link rel="stylesheet" href="css/resume_mobile.css" media="screen and (max-width: 839px)"/>
+</head>
+<body>
+
+<div id="top">
+    <span class="top-title">赵文赟/Android软件工程师/专科/6年工作经验</span>
+    <a href="xxxx.pdf"><span class="top-download">Download</span></a>
+</div>
+<div id="wrapper">
+    <div class="header">
+        <div class="header-title">
+            <span class="author-name">赵文文</span>
+            <span class="author-intro"></span>
+        </div>
+        <div class="header-list">
+            <div class="header-left">
+                <ul>
+                    <li>联系方式： 15317026229</li>
+                    <li>邮箱： <a href="mailto:dev_zwy@aliyun.com">dev_zwy@aliyun.com</a></li>
+                    <li>学历： 专科(自考)/计算机应用</li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li>期望职位： Android软件工程师、Java后端工程师</li>
+                    <li>期望城市： 上海,浦东新区(优选)、上海,其他(考虑)</li>
+                    <li>当前坐标： 上海</li>
+                </ul>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+
+    <div class="person-info">
+        <span class="icon"></span>
+        <span class="subtitle">个人信息</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <div class="info-left">
+                <span>籍贯： 甘肃</span>
+                <span>学校： 西安交通大学(自考)/计算机专业/2017</span>
+                <span>工作年限： 6年</span>
+            </div>
+            <div class="info-right">
+                <span>出生年月： 1993.03.11/双鱼座</span>
+                <span>个人网站： <a href="https://www.jianshu.com/u/e85ecb539a33">https://www.jianshu.com/u/e85ecb539a33</a></span>
+                <span>GitHub： <a href="https://github.com/devzwy">https://github.com/devzwy</a></span>
+            </div>
+            <div class="clear-fix"></div>
+        </div>
+    </div>
+
+    <div class="pro-skill">
+        <span class="icon"></span>
+        <span class="subtitle">技能清单</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <ul>
+                <li>Android：Kotlin/RxJava/Okhttp/MVVM/LiveData/JetPack;</li>
+                <li>后端： Java(精通)/SpringBoot/springCloud/JPA/MyBatis;</li>
+                <li>前端： HTML(5)标准/CSS(3)标准/JavaScript/jQueyr;</li>
+                <li>Python： 简单使用/使用pyqt5开发过桌面应用;</li>
+                <li>Vue： 简单使用/开发过后台管理系统;</li>
+                <li>数据库： MySQL/SQLite/Mongo;</li>
+                <li>服务器相关： 熟悉Linux基本命令/nginx(使用)/Bash</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="work-experience">
+        <span class="icon"></span>
+        <span class="subtitle">工作经历</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <div class="company">
+                <h2>上海可零网络科技有限公司（2019年05月-今）</h2>
+                <span class="tools">开发工具： AndroidStudio + MVVM + Jetpack + Html + 第三方框架</span>
+
+                <span class="project-title">各店</span>
+                <span class="project-intro">
+                    项目使用了到大量第三方框架，主要业务模块：直播带货、短视频播放、
+                    IM即时通讯。该项目原生部分为个人独立开发。重构的初衷：原项目未使用任何设计模式，
+                    随着项目的日益增大，维护起来很不方便。另方面由于项目代码质量不高，大面积的内存泄
+                    露导致软件频繁闪退、卡死、加载Html部分页面卡顿严重，用户反馈不好用。重构版本使用
+                    Kotlin + LiveData + MVVM + Coroutine + Retrofit + OkHttp 等。为了优化
+                    Html的加载速度，我这边选用了腾讯X5的浏览器内核，提升加载效果很明显。
+                </span>
+
+                <span class="project-title">各店更新工具</span>
+                <span class="project-intro">
+                    由于各店项目中使用到了大量的html的代码，这些html代码更新比较频繁，导致更新html部分代码时需要
+                    App重新打包后发布更新apk(原项目html代码存在assets下)，考虑到这样给用户的体验不是很好，我决定
+                    将原项目加载本地html的方式由Assets更改至SD卡中，让app动态的去下载html代码，所以各店更新工具
+                    就诞生了。该工具使用Python + Pyqt5编写，可编译Mac、Windows双平台运行。工具主要由三种更新模
+                    式，模式一：Apk全量更新，使用工具上传apk，填写发布信息，app端检测到由更新时只需下载apk安装即
+                    可。模式二：Html全量更新，工具上传最新的Html代码，App检测更新并下载替换本地文件即可。模式三：
+                    Html补丁更新。该模式主要解决了模式二下全量更新html时用户下载慢的问题，用户填写需要更新的包和发
+                    布信息，工具自动与线上html代码做比对，找出需要更新的文件并生成配置文件，app端检测到更新时替换部
+                    分文件即可。工具为个人独立开发。
+                </span>
+
+            </div>
+
+            <div class="company">
+                <h2>上海虎鱼网络科技有限公司（2017年08月-2019年05月）</h2>
+                <span class="tools">开发工具： AndroidStudio + MVP + RxJava  + Idea + SpringBoot + MYSql + Redis</span>
+
+                <span class="project-title">闪速达服务端、威帮服务端、潮约App端</span>
+
+                <span class="project-intro">
+                前端使用各类第三方主流框架，采用MVP模式开发。
+                前端代码提交至Github，Github配置webHooks通知Jenkins触发编译，编译通过后给测试发送邮件通知测试介入开展工作。
+                后段部署类似前端，Jenkins编译结束后会根据业务将编译的产物分发到不同的服务器，并运行脚本以部署项目。
+                后端项目使用Kotlin编写，架构：SpringBoot+Git+Github+Jenkins+Linux+Gradle+Nginx(负载均衡)
+                前端项目使用Kotlin与Java混编模式。
+                独立开发潮约生活前端App。
+                以上项目均为个人独立开发，均已上线。
+                </span>
+            </div>
+
+
+            <div class="company">
+                <h2>上海腾营网络科技有限公司（2014年12月-2017年08月）</h2>
+                <span class="tools">开发工具： AndroidStudio + MVP + RxJava </span>
+
+                <span class="project-title">四川高速执法</span>
+
+                <span class="project-intro">
+                能熟练使用Java，Kotlin语言，对其他大部分语言有所了解并上手写过demo。项目使用Android开发中常用的开源框架，比如okh
+ttp,retrofit,glide,greendao,databinding,LiveData,koin,dagger2等，以及后端SpringBoot，SpringCloud,Eureka,
+Ribbon, Hystrix , Zuul , Spring Cloud Config ,Redis,MySQL等常用开源框架和微服务框架。对设计模式有一定理解
+，可熟练使用MVC,MVP以及MVVM模式开发项目，并掌握其他多种设计模式。本人具有良好的沟通能力，热衷开源。
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="open-source">
+        <span class="icon"></span>
+        <span class="subtitle">开源项目和作品</span>
+        <span class="long-line"></span>
+        <div class="detail-list">
+            <ul>
+                <li>
+                    <span class="source-name">NSFW：</span>
+                    <span>色情图片离线识别，基于TensorFlow实现。识别只需20ms,可断网测试，成功率99%，调用只要一行代码，从雅虎的开源项目open_nsfw移植，该模型文件可用于iOS、java、C++等平台</span>
+                    <span class="source-url">源代码地址：<a href="https://github.com/devzwy/open_nsfw_android">https://github.com/devzwy/open_nsfw_android</a></span>
+                </li>
+                <li>
+                    <span class="source-name">KUtils：</span>
+                    <span>（停止维护）封装android开发中常用的Utils,也许你的项目只需要这一个库就完全够了。不信你看，有图有真相。集成优雅的日志打印风格、app引导页面两行代码实现(也可用作轮播广告图，支持加载本地和网络,一键开启自动翻页功能，内设好几种翻页动画)、高仿iOS进度条和对话框、activity基类的封装(可继承自BaseActivity自行拓展)、常用自定义View(圆角头像等)、Glide一行代码加载图片、万能的RecycleView适配器(一行代码添加脚布局头布局，支持多级展开页面，内部已优化，支持多种列表动画效果，支持上啦加载下拉刷新等)、数据库操作GreenDao的使用案例、网络请求OkGo的二次封装(一行代码发起请求，支持缓存，文件上传下载进度监听，自定义session机制等等…</span>
+                    <span class="source-url">地址：<a href="https://github.com/devzwy/KUtils">https://github.com/devzwy/KUtils</a></span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="honor-eva">
+        <div class="honor-reward">
+            <span class="icon"></span>
+            <span class="subtitle">荣誉奖励</span>
+            <span class="long-line short-line"></span>
+            <div class="detail-list">
+                <ul>
+                    <li>🌟🌟🌟🌟🌟Github 忠实用户🌟</li>
+                    <li>🌟🌟🌟🌟王者荣耀种子选手🌟🌟</li>
+                    <li>🌟🌟🌟皮皮虾优质用户🌟🌟🌟🌟</li>
+                    <li>🌟🌟百度搜索狂人🌟🌟🌟🌟🌟🌟</li>
+                    <li>🌟职业码农🌟🌟🌟🌟🌟🌟🌟🌟🌟</li>
+                </ul>
+            </div>
+        </div>
+        <div class="self-evaluation">
+            <span class="icon"></span>
+            <span class="subtitle">自我评价</span>
+            <span class="long-line short-line"></span>
+            <div class="detail-list">
+                <ul>
+                    <li>喜欢折腾，善于折腾</li>
+                    <li>工作认真，愿意尝试新东西，对新东西有好奇心</li>
+                    <li>良好的语言沟通能力，能够积极主动交流以便解决问题</li>
+                    <li>性格外向开朗，喜欢运动，喜欢打篮球，能够独立解决问题</li>
+                    <li>热爱代码，热衷开源</li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear-fix"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var windowWidth = document.body.clientWidth;
+    var templateWidth = 320;
+
+    if (windowWidth < 840) {
+        var calcFontSize = (windowWidth) / templateWidth * 14 + "px";
+
+        document.getElementsByTagName("html")[0].style.fontSize = calcFontSize;
+    }
+</script>
+</body>
+</html>
